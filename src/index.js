@@ -109,9 +109,12 @@ function startRecording(event, context, callback, meetingUrl) {
                 }
             ],
         },
-        placementConstraints: [{
-            type: "distinctInstance"
-        }],
+        "placementStrategy": [
+            {
+                "field": "memory",
+                "type": "binpack"
+            }
+        ],
         taskDefinition: ecsTaskDefinationArn
     };
     
