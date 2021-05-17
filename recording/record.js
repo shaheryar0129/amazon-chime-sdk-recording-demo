@@ -73,8 +73,6 @@ const year = timestamp.getFullYear();
 const month = timestamp.getMonth() + 1;
 const day = timestamp.getDate();
 const hour = timestamp.getUTCHours();
-const folder = MEETING_URL.split("=")[5]
-const folder2 = folder.toString()
 const fileName = `${MEETING_URL.split("=")[1].split("&")[0]}.mp4`;
 new S3Uploader(BUCKET_NAME, fileName).uploadStream(transcodeStreamToOutput.stdout);
 
