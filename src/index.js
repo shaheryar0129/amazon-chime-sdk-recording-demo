@@ -111,7 +111,7 @@ function startRecording(event, context, callback, meetingUrl) {
         },
         "placementStrategy": [
             {
-                "field": "CPU",
+                "field": "memory",
                 "type": "binpack"
             }
         ],
