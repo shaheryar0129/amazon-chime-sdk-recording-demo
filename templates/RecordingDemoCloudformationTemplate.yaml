@@ -6,7 +6,7 @@ Transform: 'AWS::Serverless-2016-10-31'
 Parameters:
   ECSTaskCpu:
     Type: Number
-    Default: 2048
+    Default: 4096
   ECSTaskMemory:
     Type: Number
     Default: 8192
@@ -15,7 +15,7 @@ Parameters:
     Default: 'recording-demo-container'
   ECSContainerCpu:
     Type: Number
-    Default: 2048
+    Default: 4096
   ECSContainerMemory:
     Type: Number
     Default: 8192
@@ -46,10 +46,10 @@ Parameters:
   InstanceType:
     Description: EC2 instance type
     Type: String
-    Default: t3.xlarge
+    Default: t3.medium
     AllowedValues: [mt2.large, t2.xlarge, t2.2xlarge, t3.large, t3.xlarge, t3.2xlarge, m4.large, m4.xlarge, 
     m4.2xlarge, m4.4xlarge, m5.large, m5.xlarge, m5.2xlarge, m5.4xlarge, m5.8xlarge, c4.xlarge, c4.2xlarge, 
-    c4.4xlarge, c5.large, c5.xlarge, c5.2xlarge, c5.4xlarge]
+    c4.4xlarge, c5.large, c5.xlarge, c5.2xlarge, c5.4xlarge, t3.medium]
     ConstraintDescription: Please choose a valid instance type.
   RecordingDemoLogGroupName:
     Type: String
