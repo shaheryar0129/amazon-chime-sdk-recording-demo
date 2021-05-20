@@ -6,7 +6,7 @@ Transform: 'AWS::Serverless-2016-10-31'
 Parameters:
   ECSTaskCpu:
     Type: Number
-    Default: 4096
+    Default: 2048
   ECSTaskMemory:
     Type: Number
     Default: 8192
@@ -15,7 +15,7 @@ Parameters:
     Default: 'recording-demo-container'
   ECSContainerCpu:
     Type: Number
-    Default: 4096
+    Default: 2048
   ECSContainerMemory:
     Type: Number
     Default: 8192
